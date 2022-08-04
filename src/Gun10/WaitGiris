@@ -1,0 +1,46 @@
+ /*
+    Selenium Bekletme Konusu
+    Thread.Sleep : bu selenium a özel değil, java ya ait yazılımın herhangi bir yerinde verilen süre kadar bekler.
+
+    Implicitly Wait :
+    Tüm sayfadaki elemanlar için bir bekleme süresi atanıyor.Ancak eleman bulunduğu anda daha fazla beklemiyor.
+    Bütüm elemanlar için geçerli.NoSuchElement hatası nı vermek için verilen süre kadar,  eleman bulunana kadar bekler.
+
+      driver.manage().timeouts().implicitlyWait(dr);
+
+
+    pageLoadTimeout :
+      driver.manage().timeouts().pageLoadTimeout(dr);
+      30 sn süresinde sayfanın yüklenmesini bekliyor, bu süreden sonra timeout düşerek hata verir.
+ */
+ ```/*
+     İnterview Sorusu :  Implicit ve Explicit
+
+     Implicitliy : Bütün elemanlar için geçerli,Bir kere tanımlanır.
+     Explicit    : Tek bir eleman özel Kriter olarak tanımlanır sadece ilgili elemanda geçerli olur
+
+     Her ikisi tanımlı ise : önce Implicit kullanılır, ve üzerine Explicit in süresi eklenerek
+                                   toplam hata sınır süresi ortaya çıkmış olur.
+
+     ExpectedConditions
+    .titleIs -> title bu olana kadar bekle
+    .titleContains -> title ın da bu kelime geçene kadar bekle
+    .urlToBe -> url bu olana kadar bekle
+    .urlContains -> url de bu kelime geçene kadar bekle
+    .visibilityOfElementLocated -> eleman var ve gözükür olana kadar bekle
+    .visibilityOfTheElement -> eleman gözükene kadar bekle
+    .InvisibilityOfTheElement -> eleman kaybolana kadar bekle
+    .elementToBeClickable -> eleman tıklanabilir olana kadra bekle
+    .elementToBeSelected -> eleman seçilebilir olana kadra bekle
+    .textToBe -> elemanda verilen txt gözükene kadar bekle.
+    .alertIsPresent()  -> alert çıkana kadar bekle.
+    .visibilityOfAllElementsLocatedBy -> locator ile bütün elemanlari gözükene kadar bekle
+    .visibilityOfAllElements -> Verilen elemanların listesindeki tüm elemanlar gözrünür olana kadar bekle
+    .numberOfElementsToBe  -> verilen locatora sahip elemanların sayısı bu olana kadar bekle
+    .numberOfElementsToBeLessThan -> verilen locatora sahip elemanların sayısı verilenden az olana kadar bekle
+    .numberOfElementsToBeMoreThan -> verilen locatora sahip elemanların sayısı verilenden fazla olana kadar bekle
+
+ https://the-internet.herokuapp.com/
+ https://the-internet.herokuapp.com/dynamic_controls
+
+  */```
